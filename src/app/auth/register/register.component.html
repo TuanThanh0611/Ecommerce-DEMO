@@ -1,0 +1,14 @@
+<div class="register-container">
+    <h2>Đăng Ký</h2>
+    <form (ngSubmit)="onSubmit()" #registerForm="ngForm">
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" [(ngModel)]="registerRequest.email" required />
+        </div>
+        <div class="form-group">
+            <label for="password">Mật khẩu:</label>
+            <input type="password" id="password" name="password" [(ngModel)]="registerRequest.password" required />
+        </div>
+        <button type="submit">Đăng Ký</button>
+    </form>
+</div>
